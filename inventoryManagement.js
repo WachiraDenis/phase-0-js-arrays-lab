@@ -5,21 +5,30 @@ const products = [
 "Headphones",
 "Monitor",
 ]
-function logFirstProduct(products){
-    console.log(products[0])}
-function addProduct(products){products.push("Keyboard")}
-
-function updateProductName(products, index, newName){
-products[index]=newName; 
+function logFirstProduct(products) {
+    console.log(products[0]);
 }
 
-function removeLastProduct(products){
-  products.pop();
+function addProduct(products) {
+    products.push("Keyboard");
 }
 
+function updateProductName(products, index, newName) {
+    products[index] = newName;
+}
+
+function removeLastProduct(products) {
+    products.pop();
+}
+
+// Call the functions
+logFirstProduct(products);
 
 addProduct(products);
 removeLastProduct(products);
+
+updateProductName(products, 1, "Tablet");
+
 console.log(products);
 
 
