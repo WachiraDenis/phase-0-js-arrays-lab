@@ -1,35 +1,30 @@
-// Write your code here
+
 const products = [
-"Laptop",
-"Phone",
-"Headphones",
-"Monitor",
-]
-function logFirstProduct(products) {
+    "Laptop",
+    "Phone",
+    "Headphones",
+    "Monitor",
+];
+
+// Log the first product
+function logFirstProduct() {
     console.log(products[0]);
 }
 
-function addProduct(products) {
-    products.push("Keyboard");
+// Add a new product
+function addProduct(newProduct) {
+    products.push(newProduct);
 }
 
-function updateProductName(products, index, newName) {
+// Update a product name using its index
+function updateProductName(index, newName) {
     products[index] = newName;
 }
 
-function removeLastProduct(products) {
+// Remove the last product
+function removeLastProduct() {
     products.pop();
 }
-
-// Call the functions
-logFirstProduct(products);
-
-addProduct(products);
-removeLastProduct(products);
-
-updateProductName(products, 1, "Tablet");
-
-console.log(products);
 
 
 // Export the necessary parts for testing
